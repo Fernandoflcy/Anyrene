@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanukaaaa fez 19🙂🥰</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela de boas-vindas -->
+  <div id="welcome-screen">
+    <h1>Olá, <span id="special-name" class="animated-text">Irene Paula Pinheiro Herculano</span>! 🌟</h1>
+    <p>Hoje preparei algo incrível para você. Clique no botão abaixo duas vezes para começar!</p>
+    <button id="start-btn">Começar a Surpresa 🎉</button>
+  </div>
+
+  <!-- Conteúdo da surpresa -->
+  <div id="surprise-content" style="display: none;">
+    <audio id="background-music" loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+    </audio>
+
+    <button id="toggle-theme">Alternar Modo 🌙/☀️</button>
+    <h2 id="countdown-timer">Aguarde a surpresa em... 10 segundos</h2>
+
+    <div id="secret-message" style="display: none;">
+    <br>  <h2>✨ Mensagem Especial ✨</h2>
+      <p id="typed-message"></p>
+    </div>
+</br>
+    <div id="photo-gallery" style="display: none;">
+      <h3>Galeria de Momentos</h3>
+      <div class="gallery">
+        <img src="photo1.jpg" alt="Foto 1">
+        <img src="photo2.jpg" alt="Foto 2">
+        <img src="photo3.jpg" alt="Foto 3">
+         <img src="photo4.jpg" alt="Foto 4">
+          <img src="photo5.jpg" alt="Foto 5">
+           <img src="1.png" alt="Foto 5">
+<img src="2.png" alt="Foto 5">
+<img src="3.png" alt="Foto 5">
+<img src="4.png" alt="Foto 5">
+<img src="5.png" alt="Foto 5">
+
+
+      </div>
+    </div>
+
+    <div id="countdown" class="countdown"></div>
+    <canvas id="animation-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+   
+<canvas id="celebration-canvas"></canvas>
+
+    <button id="download-btn" style="display: none;">Baixar Presente 🎁</button>
+
+    <div id="response-form" style="display: none;">
+      <h3>Deixe sua Mensagem no WhatsApp, Irene 🙂 💬</h3>
+      <textarea id="response-message" placeholder="Escreva algo especial..."></textarea>
+      <button id="send-response">Enviar Mensagem</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
